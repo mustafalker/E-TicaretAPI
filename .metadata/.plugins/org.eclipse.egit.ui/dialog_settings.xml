@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="MUSTAFA ÜLKER &lt;ulker_06mustafa@hotmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="MUSTAFA ÜLKER &lt;ulker_06mustafa@hotmail.com&gt;"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\ulker\OneDrive\Masaüstü\Mustafa\Business\Görsel Programlama\E-Ticaret\E-Ticaret-Backend\.git">
+			<item value="empty"/>
+		</list>
+		<list key="C:\Users\ulker\OneDrive\Masaüstü\Mustafa\Business\Görsel Programlama\E-Ticaret\E-Ticaret-Backend\E-TicaretAPI\.git">
+			<item value="false"/>
+			<item value="MUSTAFA ÜLKER &lt;ulker_06mustafa@hotmail.com&gt;"/>
+			<item value="asdasd"/>
+			<item value="MUSTAFA ÜLKER &lt;ulker_06mustafa@hotmail.com&gt;"/>
+			<item value="b9c177faaf0fd84378a13aa4ff482e7a9933cba4"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>

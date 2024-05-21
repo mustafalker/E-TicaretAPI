@@ -1,0 +1,12 @@
+package com.example.ETicaretAPI.BLL;
+
+import com.example.ETicaretAPI.Entities.Order_Details.*;
+import java.util.List;
+
+public interface IETicaretOrderServiceBLL {
+    List<Order> getAll();
+    void add(Order order);
+    void update(Order order);
+    void delete(Order order);
+    Order getById(int id);
+}

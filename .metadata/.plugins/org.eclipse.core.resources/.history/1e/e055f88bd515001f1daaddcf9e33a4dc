@@ -1,0 +1,12 @@
+package com.example.ETicaretAPI.DAL;
+
+import java.util.List;
+
+import com.example.ETicaretAPI.Entities.Product_Dependency.Category;
+
+public interface IETicaretCategoryServiceDAL {
+	
+	List<Category> getAll();
+	void add(Category category);
+	void update(Category category);
+}

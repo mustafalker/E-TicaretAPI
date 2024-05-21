@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.Entities.Order_Details.Payment"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.ETicaretApiApplication"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.BLL.IETicaretProductService"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.DAL.IETicaretProductServiceDAL"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.TypedQuery"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.Entities.Product_Dependency.Product"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.DAL.IETicaretCategoryServiceDAL"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.BLL.IETicaretCategoryServiceBLL"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.RestApi.ETicaretCategoriesController"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.Entities.Product_Dependency.Category"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.example.ETicaretAPI.Entities.Order_Details.OrderDetail"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

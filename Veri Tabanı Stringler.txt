@@ -1,0 +1,49 @@
+CREATE TABLE "user" (
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100) UNIQUE NOT NULL,
+    birth_date DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE orders ( -- Siparişler tablosunu oluştur
+    order_id SERIAL PRIMARY KEY, -- Sipariş kimlik numarası, anahtar (seri)
+    user_id INT NOT NULL, -- Kullanıcı kimlik numarası, boş olmayan
+    order_date DATE DEFAULT CURRENT_DATE, -- Sipariş tarihi, varsayılan: bugün
+    total_price DECIMAL(10,2), -- Toplam fiyat
+    payment_status VARCHAR(20), -- Ödeme durumu
+    shipment_status VARCHAR(20), -- Gönderim durumu
+    delivery_address_id INT, -- Teslimat adresi kimlik numarası
+    billing_address_id INT, -- Fatura adresi kimlik numarası
+    FOREIGN KEY (user_id) REFERENCES "user"(user_id), -- Kullanıcı tablosuna referans
+    FOREIGN KEY (delivery_address_id) REFERENCES addresses(address_id), -- Adresler tablosuna referans (teslimat)
+    FOREIGN KEY (billing_address_id) REFERENCES addresses(address_id) -- Adresler tablosuna referans (fatura)
+);
+
+CREATE TABLE addresses ( -- Adresler tablosunu oluştur
+    address_id SERIAL PRIMARY KEY, -- Adres kimlik numarası, anahtar (seri)
+    user_id INT NOT NULL, -- Kullanıcı kimlik numarası, boş olmayan
+    address_type VARCHAR(20), -- Adres türü	
+    address_line1 VARCHAR(100), -- Adres satırı 1
+    address_line2 VARCHAR(100), -- Adres satırı 2
+    city VARCHAR(50), -- Şehir
+    postal_code VARCHAR(20), -- Posta kodu
+    country VARCHAR(50), -- Ülke
+    extra_info TEXT, -- Ek bilgi
+    FOREIGN KEY (user_id) REFERENCES "user"(user_id) -- Kullanıcı tablosuna referans
+);
+
+CREATE TABLE payment_details ( -- Ödeme detayları tablosunu oluştur
+    payment_id SERIAL PRIMARY KEY, -- Ödeme kimlik numarası, anahtar (seri)
+    user_id INT NOT NULL, -- Kullanıcı kimlik numarası, boş olmayan
+    card_type VARCHAR(50), -- Kart tipi
+    card_number VARCHAR(100), -- Kart numarası (şifrelenmiş olarak saklanmalı)
+    expiration_date DATE, -- Son kullanma tarihi
+    cvv VARCHAR(10), -- CVV (şifrelenmiş olarak saklanmalı)
+    billing_address_id INT, -- Fatura adresi kimlik numarası
+    FOREIGN KEY (user_id) REFERENCES "user"(user_id), -- Kullanıcı tablosuna referans
+    FOREIGN KEY (billing_address_id) REFERENCES addresses(address_id) -- Adresler tablosuna referans (fatura)
+);

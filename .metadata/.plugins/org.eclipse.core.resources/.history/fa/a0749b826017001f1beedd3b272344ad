@@ -1,0 +1,7 @@
+package com.example.ETicaretAPI.BLL;
+import com.example.ETicaretAPI.Entities.Product_Dependency.Category;
+import java.util.List;
+public interface IETicaretCategoryServiceBLL {
+
+	List<Category> getAll();
+}

@@ -1,0 +1,5 @@
+package com.example.ETicaretAPI.RestApi;
+
+public class ETicaretCategoriesController {
+
+}

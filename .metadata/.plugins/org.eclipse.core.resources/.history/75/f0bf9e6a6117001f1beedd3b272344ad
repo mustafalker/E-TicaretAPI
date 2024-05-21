@@ -1,0 +1,46 @@
+package com.example.ETicaretAPI.BLL;
+
+import java.util.List;
+
+import com.example.ETicaretAPI.DAL.IETicaretCategoryServiceDAL;
+import com.example.ETicaretAPI.Entities.Product_Dependency.Category;
+
+import jakarta.transaction.Transactional;
+
+public class ETicaretCategoryServiceBLL implements IETicaretCategoryServiceBLL {
+
+	private final IETicaretCategoryServiceDAL productServiceDAL;
+	
+	public ETicaretCategoryServiceBLL(IETicaretCategoryServiceDAL productServiceDAL) {
+		this.productServiceDAL = productServiceDAL;
+	}
+	@Override
+	public List<Category> getAll() {
+		return productServiceDAL.getAll();
+	}
+
+	@Override
+	@Transactional
+	public void add(Category category) {
+		
+	}
+
+	@Override
+	public void update(Category category) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Category category) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Category getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
