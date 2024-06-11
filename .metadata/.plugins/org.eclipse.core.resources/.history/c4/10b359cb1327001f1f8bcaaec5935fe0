@@ -1,0 +1,13 @@
+package WebConfig;
+
+import com.iyzipay.Options;
+
+public class Config {
+    public static Options createOptions() {
+        Options options = new Options();
+        options.setApiKey("sandbox-ZhtbsfEffHgcmaqjp784hWqu0n9rPXvb");
+        options.setSecretKey("sandbox-TtJkEpy8NUX6cqdUQimROOwN8ZiiCkaS");
+        options.setBaseUrl("https://sandbox-api.iyzipay.com");
+        return options;
+    }
+}
